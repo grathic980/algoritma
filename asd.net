@@ -1,0 +1,10 @@
+If daftarBiaya(titikSebelumnya, titikBerikutnya) <> 0 Then
+	If jalur.Count = daftartitik.Count Then
+		Console.WriteLine("Jalur sudah ditemukan")
+		Console.Write("Jalur yang terbentuk = ")
+		For i As Integer = 0 To jalur.Count - 1
+			Dim titik As Integer = jalur(i)
+			Console.Write(IIf(i = 0, "", "-") & Chr(titik + 65))
+		Next
+		Console.WriteLine("")
+	End If
